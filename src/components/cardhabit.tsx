@@ -10,7 +10,7 @@ interface HabitCardProps {
 export default function HabitCard({ habit, onToggle, onDelete }: HabitCardProps) {
   return (
     <View style={[styles.card, habit.completedToday && styles.cardCompleted]}>
-      {/* Main pressable area for completing mission */}
+      {}
       <TouchableOpacity 
         style={styles.content} 
         onPress={onToggle}
@@ -28,7 +28,7 @@ export default function HabitCard({ habit, onToggle, onDelete }: HabitCardProps)
         </View>
       </TouchableOpacity>
 
-      {/* Independent delete button */}
+      {}
       <TouchableOpacity 
         style={styles.deleteBtn} 
         onPress={onDelete}
